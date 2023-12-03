@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dany</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        
+    </head>
+    <body>
+        <header id="header">
+            <a href="home.html" class="my-logo"><img src="logo.png" alt="logo.png"></a>
+            <div class="search-option">
+                <span id="selectedOption">Articles <span class="arrow">&#129171;</span></span>
+                <ul class="search-option-description">
+                    <li onclick="updatePlaceholder('Rechercher des articles', 'Articles')">Articles</li>
+                    <li onclick="updatePlaceholder('Rechercher des membres', 'Membres')">Membres</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Rechercher des articles">
+                <div class="clear-button" onclick="clearSearchInput()"><span>&#10006;</span></div>
+                <button class="search-button"><img src="loupe.png" alt="loupe.png" class="logo-loupe"></button>
+            </div>
+            <div class="header-links">
+                <ul class="header-ul">
+                    <li class="li-login-signup">
+                        <a href="signup.html">Nous rejoindre</a>
+                        <span style="color: #7A763D;">|</span>
+                        <a href="login.html">S'identifer</a>
+                    </li>
+                    <li class="li-sell"><a href="sell.html">Vends tes articles</a></li>
+                </ul>
+            </div>
+            <div id="burger-icons"></div>
+        </header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Tableaux</a></li>
+                <li><a href="">Modèles 3D</a></li>
+                <li><a href="">Poteries</a></li>
+                <li><a href="">Sculptures</a></li>
+                <li><a href="">Customisations textiles</a></li>
+                <li><a href="">Textiles brodés</a></li>
+                <li><a href="">Idées & Créations</a></li>
+            </ul>
+        </nav>
+        <script src="main.js"></script>
+    </body>
+</html>
